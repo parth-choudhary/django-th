@@ -21,3 +21,8 @@ deploy:
     secure: WIXep4jx43v39WyW2/Q47KmXJ6iP2DsZl6ArbkI2x1XpPQrncI/YZN54RJdXW1AJA8z76+jWvLhFHfpQaBnz6e98ThrDnYayjrkp0SNPURB2aKFxkmtYjF+rC9onP4rm9nDCxt6NHAm+Y0eKKRyFlhRPSyVI7qkSp77GY3TOlEc=
   on:
     tags: true
+
+branches:
+  only:
+  - trigger-happy-v1
+  - trigger-happy-1/^\.\d+\.\d+
