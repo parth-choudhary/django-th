@@ -1,5 +1,7 @@
 # coding: utf-8
 from unittest.mock import patch
+import arrow
+from django.conf import settings
 
 from django_th.service_provider import ServiceProvider
 from django_th.read import Read
@@ -21,17 +23,19 @@ class ReadTestCase(MainTest):
 
     def test_reading(self):
         from django_th.services import default_provider
+        now = arrow.utcnow().to(settings.TIME_ZONE).format(
+            'YYYY-MM-DD HH:mm:ssZZ')
         service = self.create_triggerservice()
-        date_triggered = service.date_triggered if service.date_triggered else service.date_created
+        date_triggered = service.date_triggered if service.date_triggered \
+            else now
 
         kwargs = {'token': service.provider.token,
                   'trigger_id': service.id,
-                  'date_triggered': date_triggered,
-                  'consumer': service.consumer.name.name,
-                  'consumer_token': service.consumer.token}
+                  'date_triggered': date_triggered}
 
         with patch.object(ServiceProvider, 'get_service') as mock_it:
-            mock_it.return_value = default_provider.get_service(str(service.provider.name.name))
+            mock_it.return_value = default_provider.get_service(
+                str(service.provider.name.name))
             with patch.object(Read, 'provider') as mock_read:
                 se = Read()
                 se.reading(service)

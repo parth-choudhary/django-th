@@ -1,6 +1,6 @@
 # Django settings for django_th project.
 import os
-from django.core.urlresolvers import reverse_lazy
+from django.urls.base import reverse_lazy
 
 import environ
 
