@@ -13,6 +13,7 @@ from django_th.views_fbv import service_related_triggers_switch_to
 from django_th.views_userservices import UserServiceListView, UserServiceCreateView, UserServiceUpdateView
 from django_th.views_userservices import UserServiceDeleteView, renew_service
 from django_th.views_wizard import UserServiceWizard, finalcallback
+from django_th.views_vue import TriggersTemplateView
 
 from django_js_reverse.views import urls_js
 
@@ -90,7 +91,11 @@ urlpatterns = [
     path('th/myfeeds/', include('th_rss.urls')),
 
     path('th/api/taiga/webhook/', include('th_taiga.urls')),
-    path('th/api/slack/webhook/', include('th_slack.urls'))
+    path('th/api/slack/webhook/', include('th_slack.urls')),
+
+    # API
+    url(r'^th/vue/', TriggersTemplateView.as_view(), name='triggers'),
+    url(r'^th/api/vue/', include('django_th.api.urls')),
 ]
 
 if settings.DJANGO_TH.get('fire'):

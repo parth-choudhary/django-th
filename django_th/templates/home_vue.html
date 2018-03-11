@@ -1,0 +1,17 @@
+{% extends "base_vue.html" %}
+{% load static %}
+{% load i18n %}
+{% load django_th_extras %}
+
+{% block title %}{% if user.is_authenticated %}{% trans "My Triggers" %} - {{ user.username }} - {% else %}{% trans "Home" %} - {% endif %}Trigger Happy{% endblock %}
+
+{% block content %}
+  <div id="app"><triggers></triggers></div>
+{% endblock %}
+{% block extrajs %}
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!--script src="{% url 'js_reverse' %}" type="text/javascript"></script-->
+<script src="{% static 'js/th_vue.js' %}" type="text/javascript"></script>
+
+{%  endblock  %}
