@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/foxmask/django-th.svg?branch=trigger-happy-v1
-    :target: https://travis-ci.org/foxmask/django-th
+.. image:: https://travis-ci.org/push-things/django-th.svg?branch=trigger-happy-v1
+    :target: https://travis-ci.org/push-things/django-th?branch=trigger-happy-v1
     :alt: Travis Status
 
 
