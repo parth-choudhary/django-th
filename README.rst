@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/push-things/django-th.svg?branch=master
-    :target: https://travis-ci.org/push-things/django-th
+.. image:: https://travis-ci.org/push-things/django-th.svg?branch=v2
+    :target: https://travis-ci.org/push-things/django-th?branch=v2
     :alt: Travis Status
 
 
