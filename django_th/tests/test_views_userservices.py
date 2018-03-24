@@ -68,6 +68,24 @@ class UserServiceCreateViewTestCase(MainTest):
         form = UserServiceForm(data=data, initial={'user': self.user, 'name': 'ServiceRss'})
         self.assertFalse(form.is_valid())
 
+    def test_valid_selfhosted_form(self):
+        data = {'host': 'http://foobar.com', 'username': 'jon', 'password': 'doe',
+                'client_id': 'whatever', 'client_secret': 'guessthatone'}
+        form = UserServiceForm(data=data, initial={'user': self.user, 'name': 'ServiceRss'})
+        self.assertFalse(form.is_valid())
+
+    def test_invalid_selfhosted_form(self):
+        data = {'host': 'foobar.com', 'username': 'jon', 'password': 'doe',
+                'client_id': 'whatever', 'client_secret': 'guessthatone'}
+        form = UserServiceForm(data=data, initial={'user': self.user, 'name': 'ServiceRss'})
+        self.assertFalse(form.is_valid())
+
+    def test_valid_host_no_end_slash_form(self):
+        data = {'host': 'http://foobar.com/', 'username': 'jon', 'password': 'doe',
+                'client_id': 'whatever', 'client_secret': 'guessthatone'}
+        form = UserServiceForm(data=data, initial={'user': self.user, 'name': 'ServiceRss'})
+        self.assertFalse(form.is_valid())
+
 
 class UserServiceUpdateViewTestCase(MainTest):
 
