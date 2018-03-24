@@ -94,3 +94,10 @@ Documentation
 For installation and settings, see http://trigger-happy.readthedocs.org/
 
 
+Trigger Happy Branch 2.x
+========================
+
+This branch is a WIP and support Django 2.x
+
+For Django 1.11.x support, the [branch trigger-happy-v1](https://github.com/push-things/django-th/tree/trigger-happy-v1)
+is a still available but updated with fixes and updaet of Django 1.11.x. New feature will be for v2 only
