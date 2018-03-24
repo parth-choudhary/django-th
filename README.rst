@@ -1,4 +1,4 @@
-.. image:: https://travis-ci.org/foxmask/django-th.svg?branch=master
+.. image:: https://travis-ci.org/foxmask/django-th.svg?branch=trigger-happy-v1
     :target: https://travis-ci.org/foxmask/django-th
     :alt: Travis Status
 
@@ -23,13 +23,13 @@
    :alt: Test Coverage
 
 
-.. image:: https://scrutinizer-ci.com/g/foxmask/django-th/badges/quality-score.png?b=master
-   :target: https://scrutinizer-ci.com/g/foxmask/django-th/?branch=master
+.. image:: https://scrutinizer-ci.com/g/foxmask/django-th/badges/quality-score.png?b=trigger-happy-v1
+   :target: https://scrutinizer-ci.com/g/foxmask/django-th/?branch=trigger-happy-v1
    :alt: Scrutinizer Code Quality
 
 
-.. image:: https://readthedocs.org/projects/trigger-happy/badge/?version=latest
-    :target: https://readthedocs.org/projects/trigger-happy/?badge=latest
+.. image:: https://readthedocs.org/projects/trigger-happy/badge/?version=trigger-happy-v1
+    :target: https://readthedocs.org/projects/trigger-happy/?badge=trigger-happy-v1
     :alt: Documentation status
 
 
