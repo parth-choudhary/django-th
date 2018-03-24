@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/foxmask/django-th.svg?branch=master
-    :target: https://travis-ci.org/foxmask/django-th
+.. image:: https://travis-ci.org/push-things/django-th.svg?branch=master
+    :target: https://travis-ci.org/push-things/django-th
     :alt: Travis Status
 
 
@@ -8,23 +8,23 @@
     :alt: Latest version
 
 
-.. image:: https://codeclimate.com/github/foxmask/django-th/badges/gpa.svg
-    :target: https://codeclimate.com/github/foxmask/django-th
+.. image:: https://codeclimate.com/github/push-things/django-th/badges/gpa.svg
+    :target: https://codeclimate.com/github/push-things/django-th
     :alt: Code Climate
 
 
 .. image:: https://api.codeclimate.com/v1/badges/38248f257ac2a363bb73/test_coverage
-   :target: https://codeclimate.com/github/foxmask/django-th/test_coverage
+   :target: https://codeclimate.com/github/push-things/django-th/test_coverage
    :alt: Test Coverage
 
 
-.. image:: https://coveralls.io/repos/github/foxmask/django-th/badge.svg
-   :target: https://coveralls.io/github/foxmask/django-th
+.. image:: https://coveralls.io/repos/github/push-things/django-th/badge.svg
+   :target: https://coveralls.io/github/push-things/django-th
    :alt: Test Coverage
 
 
-.. image:: https://scrutinizer-ci.com/g/foxmask/django-th/badges/quality-score.png?b=master
-   :target: https://scrutinizer-ci.com/g/foxmask/django-th/?branch=master
+.. image:: https://scrutinizer-ci.com/g/push-things/django-th/badges/quality-score.png?b=master
+   :target: https://scrutinizer-ci.com/g/push-things/django-th/?branch=master
    :alt: Scrutinizer Code Quality
 
 
@@ -44,8 +44,8 @@
 
 
 .. image:: https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg
-    :target: https://saythanks.io/to/foxmask
-    :alt: Say thanks to foxmask
+    :target: https://saythanks.io/to/push-things
+    :alt: Say thanks to push-things
 
 
 =============
@@ -60,7 +60,7 @@ The possibilities are too numerous to name all of them, but with that project yo
 
 And last but not least, as this is your project, all the credentials you used to give to IFTTT and consorts, are now safe in your hands.
 
-.. image:: https://raw.githubusercontent.com/foxmask/django-th/master/docs/installation_guide/th_esb.png
+.. image:: https://raw.githubusercontent.com/push-things/django-th/master/docs/installation_guide/th_esb.png
    :alt: Trigger Happy Architecture
 
 
